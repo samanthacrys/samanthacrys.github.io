@@ -1,0 +1,14 @@
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/bin/Debug/net6.0/DefeatTheGlabgargs
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/bin/Debug/net6.0/DefeatTheGlabgargs.deps.json
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/bin/Debug/net6.0/DefeatTheGlabgargs.runtimeconfig.json
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/bin/Debug/net6.0/DefeatTheGlabgargs.dll
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/bin/Debug/net6.0/DefeatTheGlabgargs.pdb
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/DefeatTheGlabgargs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/DefeatTheGlabgargs.AssemblyInfoInputs.cache
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/DefeatTheGlabgargs.AssemblyInfo.cs
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/DefeatTheGlabgargs.csproj.CoreCompileInputs.cache
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/DefeatTheGlabgargs.dll
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/refint/DefeatTheGlabgargs.dll
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/DefeatTheGlabgargs.pdb
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/DefeatTheGlabgargs.genruntimeconfig.cache
+/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/obj/Debug/net6.0/ref/DefeatTheGlabgargs.dll

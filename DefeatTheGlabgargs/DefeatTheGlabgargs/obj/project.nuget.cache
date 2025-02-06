@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "EZIDKno9Yfs=",
+  "success": true,
+  "projectFilePath": "/Users/samantha/Projects/DefeatTheGlabgargs/DefeatTheGlabgargs/DefeatTheGlabgargs.csproj",
+  "expectedPackageFiles": [
+    "/Users/samantha/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/samantha/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/samantha/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.36/microsoft.netcore.app.host.osx-x64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}
