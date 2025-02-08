@@ -1,0 +1,86 @@
+/*navigation rules begin*/
+nav {
+	padding-left: 10px;
+	width: 1010px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+    padding: 0 0;
+    border-radius: 10px;
+    list-style: none;
+    display: inline-block;
+    background: linear-gradient(top, #efefef 08, #bbbbbb 1008);
+    background: -moz-linear-gradient(top, #efefef 08, #bbbbbb 1008);
+    background: -webkit-linear-gradient(top, #efefef 08, #bbbbbb 1008);
+    box-shadow: 0px 0px 9px rgba(5,5,5,5.15);
+    background-color: #753c9d;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 5px 5px 5px 10px;
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: linear-gradient(top, #c17df0 08, #5f6975 408);
+    background: -moz-linear-gradient(top, #c17df0 08, #5f6975 408);
+    background: -webkit-linear-gradient(top, #c17df0 08, #5f6975 408);
+}
+
+nav ul li:hover a {
+    color: #18e097;
+}
+
+nav ul li:hover > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li:hover > ul li {
+    float: none;
+    display: block;
+}
+
+nav ul li:hover > ul li a {
+    color: #FFFFFF;
+    mid-width: 150px;
+}
+
+nav ul li:hover > ul li a:hover {
+    color: #18e097;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    background-color: #753c9d;
+}
+
+nav ul li a.current {
+	color: #02e4ff;
+}
+
+nav ul li ul li a.current {
+	color: #02e4ff;
+}
+
+/*navigation rules end*/
