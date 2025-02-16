@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{21A35FB2-90F9-4894-8BF6-DBFC482E0B51}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.DefeatTheGlabgargs PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Showers.cs">
+    <Files>
+      <File FileName="GameSelections.cs" />
+      <File FileName="FloorTwoCorridor.cs" />
+      <File FileName="Player.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Bridge.cs" />
+      <File FileName="Showers.cs" Line="48" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DefeatTheGlabgargs" expanded="True">
+            <Node name="DefeatTheGlabgargs" expanded="True">
+              <Node name="Showers.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
