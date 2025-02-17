@@ -1,444 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <Title>Samantha Durr's Computer Science Capstone: Artifact 1</Title>
+        <Title>Samantha Durr's Computer Science Capstone: Artifact 3</Title>
         <link rel="stylesheet" type="text/css" href="../css/mainStyle.css">
         <link rel="stylesheet" type="text/css" href="../css/navigationBar.css">
     </head>
     <body>
         <div id="wrapper">
             <header><h1>Samantha Durr's CS 499 Capstone</h1>
-                <h2>Artifact 2: Task Class Conversion</h2>
+                <h2>Artifact 3: Database</h2>
             </header>
             <nav> 
                 <ul>
-                    <li><a href="Artifact3.html" class="current">Artifact 2</a>
+                    <li><a href="Artifact3.html" class="current">Artifact 3</a>
                         <ul>
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="Artifact1.html">Artifact 1</a></li>
                             <li><a href="Artifact2.html">Artifact 2</a></li>
+                            <li>Self-Assessment</li>
                         </ul>
             </nav>
             <section id="mainSec">
                 <article>
-                    <p>The following is a narrative on the process taken to enhancing an algorithms and Data Structure project from a previous course. The project I chose to work with was the Task Service program from CS320. This was created during the May to June term of 2024. These two classes were for creating a ‘task’ that could have its name updated, have it added to a list of tasks, deleted, and have the description updated. A part of this also included the creation of a unique ID that would exist for a task, but this component would be a consistent index for searching among the other tasks.</p>
+                    <p>This narrative focuses around the third artifact. This artifact was the AAC dashboard program that was created for the CS 340 class taken during the September-October term of 2024. This assignment was to create a working dashboard, using python, that would connect to a MongoDB database that contained information on animals living at the Austin Animal Center. These animals were broken into different types of rescues and could be sorted through with radio buttons.</p>
 
-                    <p>I chose this because, while simple, it has a structure that holds onto the data put into the system. Additionally, it contains unit tests for ensuring that all of the component work. I wanted to show that the map of the created system was viable on its own. In the process of making a decision to enhance this component, I looked at the code that I had. It was originally done as a java project, but the java was an older version that didn’t have frequent, of any, updates. I chose to port the code over to C# and the .NET framework. The reason for this was through a security mindset. Since this was meant to be a service that would keep a list of tasks, this meant personal information could be present. By porting it over, I was using a more current version of C# and the .NET framework. These two parts are always being updated and is important for creating the system and ensuring that security holes are patched. </p>
+                    <p>The reason that I have chosen to include this in my ePortfolio is that it is an actual, searchable, database that contained web-based interaction. This interaction allowed for querying the database with a specific user that has access. It also allowed for showing that I can work with increasing the security and searchability of the code through the setup.</p>
+                    
+                    <p>When it comes to meeting the outcomes that I initially created, I can say that my original outcomes did not happen. This is due to taking a deeper into what I was doing. This led me to an update that I noticed during the code review that I felt was more important. My original plan was to get the database to run a bit faster when querying and fixing the geolocation code. When I did the code review, I looked at it and saw that, during the original assignment, we had to hard code the username and password into this. It was after this that I got to thinking and looking more deeply into my database. This led me to updating my objectives to be focusing on authenticating users and passwords.</p>
 
-                    <p>I converted the program, as is, to C#. Yet, as I was working on that, I looked closer into it. During the code review, I noticed that I could combine two of the tests into one. That was an enhancement I didn’t originally have and was good for efficiency. It was while looking at this change that I came to another conclusion. This conclusion was that I could improve efficiency further by updating the code to follow the standards of C# and the industry as a whole. This meant that I updated my original plan beyond using a language that is being updated consistently.</p>
+                    <p>Of course, before I could do any of this, I had to get my system working with the current format that I had. This turned out to be more difficult than I had expected. A part of this was because I did not have access to the original virtual environment. I had to create my own environment. This meant spending time to install and download all of the various packages and programs that were needed. This took me about around a week to get working and be able to display what I had seen in my class.</p>
 
-                    <p>To accomplish my final goal, the process was simple at first. I have experience using C# and I was able to easily convert the exact code I had into C#. The part that I didn’t know, and was the first problem, was what unit test libraries existed. I got around this by doing research into the different libraries and seeing what was more secure and choosing two of them. I chose two to try out because I reasoned that I would be able to see which one worked the way I needed it to. Once I had that figured out, ikt wouldn’t be too hard to convert the one that didn’t work to the other. This led me to using the XUnit library and the Microsoft unit test library. </p>
+                    <p>Once I got there, I did have an issue where it wouldn’t display the data. This ended up being due to me having to learn how to work MongoCompass. Once I was able to get it set up properly, everything looked like this on its side:</p>
 
-                    <p>When I first created the program in CS320, I broke the process down to create the tests. I did that again, but this time using the libraries I had chosen. After I finished that, I ran my unit tests. This is where I learned the only unit tests that appeared were those in the TaskServiceTest class. This was the class that I had use the XUnit library in. I was a little frustrated at first and wanted to test a few things. One of those was to try a different IDE, as I have seen that work. This led to the same result. This led me to looking at the TaskTest class, which had the Microsoft library. To check and see if the Microsoft library had a problem, I had to convert that code to XUnit. I started with copying the code I had written with the Microsoft unit test library into a text file. In case something happened, I wanted to be certain I had that code. I then rewrote all of the code using the XUnit library’s style. The code worked and the tests worked. That told me something, but I didn’t want to assume. </p>
+                    <p><figure><img src="../images/artifact3Pics/DatabasePic.png" height="300" width="650"></a></figure><p class="moreRight"></p>
 
-                    <p>To ensure what I was thinking was correct, I chose to test the other code as well. Since I didn’t want to lose what I knew worked, I copied that code into a text file and then replaced what was in the IDE with the original code. The copying of the code from the TaskServiceTest then went into its own text file and I converted it over to the Microsoft unit test library. When I did that, I discovered that the unit tests did not run on anything. This led me to putting the code back for the TaskServiceTest. I also replaced the TaskTest code that wasn’t working with the code I had saved in a text file that did work. Once again, my tests worked. Here are the working unit test results:</p>
+                    <p>Once I was able to get that working and the dashboard was back to what it had been before, I began the process of creating an authentication. At first, I tried to do this all through Jupyter Notebook, but I found that, outside of using it to at least get me back to being able to see the system, it wasn’t going to work. I had to stop and think for a bit. This led me to talking to a few people I know that are in the database field. After some explanations on a few different features, and a couple of rants from one of the database programmers I know on python, I realized that it would be best to convert the Jupyter Notebook script into standard Python.</p>
 
-                    <p><figure><img src="../images/artifact2Pics/PassedTest.png" height="250" width="650"></a></figure><p class="moreRight"></p>
+                    <p>Since I wasn’t using Jupyter Notebook, I was able to use Pycharm as my environment. It was one I had used in the past and knew how to work. I created a new project, I imported my updated CRUD file, and created a new Python file called dashboard. From there, since I do have Visual Studio Code, I was able to copy the code from the Jupyter Notebook file and paste it into the new dashboard file.</p>
 
-                    <p>(Note: this is the run from the final code, meaning there are additional tests included.)</p>
+                    <p>Since I had never made a system for authenticating users before, I had to do some research into how this was done. I looked at examples I found online, talked to people that I know, and pieced together what made sense to me. It was from there that I created a python file that was meant for authenticating users. This took me a little time as I had to do a lot of looking up and asking of questions because it required knowledge I didn’t have. The first component was the client. I already had this in my CRUD file. This meant I was able to copy and paste that. From there, I had to get the system to verify users. Since I had been doing research and reading up on things, I was able to put together a few different elements. One of those was that I would have to create multiple methods that would authenticate the user, get that user, and log them out. This did take a little bit of time, but constant questions did help me create a code that had no compiling issues. This is that code:</p>
 
-                    <p>Once I was able to verify that what I did work, I proceeded to take the code I had and improve upon it. While what I did worked, I noticed redundancies, such as the original code for the Task class containing many repeated segments. Here is the original code to show this:</p>
+                    <p><figure><img src="../images/artifact3Pics/CodeSnip1.png" height="350" width="600"></a></figure><p class="moreRight"></p>
 
-                    <pre>
-                        <code class="language-C# line-numbers" data-prismjs-copy="Copy the C# snippet!">
-namespace TaskSchedule
-{
-    public class Task
-    {
-        private string _taskId;
-                                    
-        private string _name;
-        private string _desc;
-                                    
-        public Task(string taskId, string name, string desc)
-        {
-            if (taskId == null || taskId.Length > 10)
-                {
-                    throw new ArgumentException("Task ID is invalid, please provide one no greater than 10 characters.");
-                }
-                                        
-                if(name == null || name.Length > 20)
-                {
-                    throw new ArgumentException("Task name invalid, please provide one no greater than 20 characters.");
-                }
-                                        
-                if(desc == null || desc.Length > 50)
-                {
-                    throw new ArgumentException("Task description invalid, please provide one no greater than 50 " +
-                    "characters.");
-                }
+                    <p>	It’s when I got to the dashboard components that I had to do a bit more work. This was because I wasn’t making a Jupyter Notebook set up that had everything. I was having to figure out what was being done where. In all of the examples I had found, I realized I needed to create a login set up. This would be important in ensuring authentication. It took me a few tries. It didn’t help that the system I was using didn’t like working with the extensions at times. I had to do a lot of code checking on websites and asking those I know to see if what I was doing would work. The biggest problem was that I didn’t have the time to fully work through it that way, but I could use third party code checkers that would do the job for me. These allowed me to test that my code did work. The final code on the login module was this:</p>
+                    
+                    <p><figure><img src="../images/artifact3Pics/CodeSnip2.png" height="300" width="600"></a></figure><p class="moreRight"></p>
 
-                    this._taskId = taskId;
-                    this._name = name;
-                    this._desc = desc;
-                }
-                                    
-                public string GetTaskId()
-                {
-                    return _taskId;
-                }
-                                    
-                public string GetTaskName()
-                {
-                    return _name;
-                }
-                                    
-                public string GetTaskDesc()
-                {
-                    return _desc;
-                }
-                                    
-                public void SetTaskName(string name)
-                {
-                    if (name == null || name.Length > 20)
-                    {
-                        throw new ArgumentException("Task name invalid, please provide one no greater than 20 characters.");
-                    }
-                                        
-                    this._name = name;
-                }
-                                    
-                public void SetTaskDesc(string desc)
-                {
-                    if (desc == null || desc.Length > 50)
-                {
-                    throw new ArgumentException("Task description invalid, please provide one no greater than 50 " + 
-                    "characters.");
-                }
-                                        
-                    this._desc = desc;
-                }
-            }
-        }
-                        </code>
-                    </pre>
+                    <p>All of this boiled down to ensuring that I could create a form that would allow users to put in their username and password. This, of course, just created the HTML components and wouldn’t work without setting it up in a way that actually calls to it. This led me to having to create an @callback. This had been done previously with the other version, but that was for pie charts and the geolocation component. Using those as my examples, I started breaking down everything into the parts I would need. For one thing, I knew I would need a method that would call to the login, which would register button presses, usernames, the path, and so on. That meant that I first had to set my output, input, and the states. That was all in the callback. Once I was certain that it was right, I moved onto creating the basic method. Once again, I had to use third party software that could check for errors and whether it would actually work, not my favorite way to do it, but it did what I needed it to. This is what these looked like:</p>
 
-                    <p>I could easily admit that this was not the most efficient code, especially since I was doing the same if statements over and over. It was creating this efficiency that caused me the most difficulty.  I did a lot of researching to figure out how to set this up while maintaining the industry standards. The first thing I tried was to see if I could reformat my constructor so that it would not need to contain these. While it worked for the ID, as that was only set to a getter, it did not work for my name or description. I did some more looking, and asking questions of developers I know, to figure this out. This led me to a few pieces of information. Beyond those developers telling me that the way I had to do it originally was not how they would do it, it was explained to me that I could not simply make the Task class more efficient on its own. I would need to also make the TaskService class more efficient as well.</p>
+                    <p><figure><img src="../images/artifact3Pics/CodeSnip3.png" height="400" width="400"></a></figure><p class="moreRight"></p>
 
-                    <p>Their information did help me in that I started looking at everything in smaller components. Since the Task class contained most of the error messages, I started looking into different ways they could be set up. This led me to creating a readonly variable that would contain that formatting. I also figured out that I would need to set the maximum values from the start so that exceeding this would cause an issue. With those out of the way, I went about reformatting my program to use properties. I had done these in the past, though not recently enough for me to recall it right away without taking a moment. It was here that I was able to include my check that, if it’s null or exceeds the allowable length, then throw an error message. Once those were written, I was able to reassign my constructor to have the base values from those properties be equal to the variable values that I set in the beginning of the constructor. That led my final code to looking like this:</p>
+                    <p><figure><img src="../images/artifact3Pics/CodeSnip4.png" height="350" width="600"></a></figure><p class="moreRight"></p>
 
-                    <pre>
-                        <code class="language-C# line-numbers" data-prismjs-copy="Copy the C# snippet!">
-namespace TaskScheduler
-
-{   
-    //This is the Task class. The components within this class is set to allow for sending error messages and the base
-    //framework for how a Task is set up. This also sets the allowed lengths of the task's ID, name, and descriptions
-    //to their maximum values.
-    public class Task
-    
-        //A constant integer that limits the length of the Task ID to 10 total integers' in length.
-        public const int MaxTaskIdLength = 10;
-                            
-        //This is a private string that is meant for showing the maximum length of the Task ID. It contains the
-        //error message that the user receives.
-        private static readonly string errorMsgInvalidTaskId =
-            $"Task ID is invalid, please provide one no greater than "+
-            $"{MaxTaskIdLength} characters.";
-                            
-            //A constant integer that limits the length of the Task name to 10 total integers' in length.
-            public const int MaxTaskNameLength = 20;
-                            
-            //This is a private string that is meant for showing the maximum length of the task's name. It contains the
-            //error message that the user receives.
-            private static readonly string errorMsgInvalidTaskName =
-                $"Task name invalid, please provide one no greater than " +
-                $"{MaxTaskNameLength} characters.";
-                            
-            //A constant integer that limits the length of the Task description to 10 total integers' in length.
-            public const int MaxTaskDescriptionLength = 50;
-                            
-            //This is a private string that is meant for showing the maximum length of the Task's description. It contains
-            //the error message that the user receives.
-            private static readonly string errorMsgInvalidTaskDescription =
-                $"Task description invalid, please provide one no greater than" +
-                $"{MaxTaskDescriptionLength} characters.";        
-                            
-            //This is the constructor that assigns the string variables of id, name, and desc to their connecting
-            //variables of Id, Name, and Description.
-            public Task(string id, string name, string desc)
-            {
-                Id = id;
-                Name = name;
-                Description = desc;
-            }
-                                    
-            //This is a string that starts off as empty and will contain the information for the ID.
-            private string _id = string.Empty;
-                                    
-            //This is a getter and setter. This gets the ID, but sets it to make sure that it is not
-            //exceeding the maximum number of allowed integers. If it does happen, then an invalid message is thrown
-            //from the matching variable.
-            public string Id
-            {
-                get => _id;
-                private set
-                {
-                    if ( string.IsNullOrEmpty(value) || value.Length > MaxTaskIdLength )
-                    {
-                        throw new ArgumentException(errorMsgInvalidTaskId);
-                    }
-                    _id = value;
-                }
-            }
-                            
-            //This is a string that starts off as empty and will contain the information for the name.
-            private string _name = string.Empty; 
-                            
-            /This is a getter and setter. This gets the name, but sets it to make sure that it is not
-            //exceeding the maximum number of allowed integers. If it does happen, then an invalid message is thrown
-            //from the matching variable.
-            public string Name
-            {
-                get => _name;
-                set
-                {
-                    if(string.IsNullOrEmpty(value) || value.Length >MaxTaskNameLength)
-                    {
-                        throw new ArgumentException(errorMsgInvalidTaskName);
-                    }
-                    _name = value;
-                }
-            }
-                                    
-            //This is a string that starts off as empty and will contain the information for the description.
-            private string _description = string.Empty;
-                                    
-            //This is a getter and setter. This gets the description, but sets it to make sure that it is not
-            //exceeding the maximum number of allowed integers. If it does happen, then an invalid message is thrown
-            //from the matching variable.
-            public string Description
-            {
-                get => _description;
-                set
-                {
-                    if (string.IsNullOrEmpty(value) || value.Length > MaxTaskDescriptionLength)
-                    {
-                        throw new ArgumentException(errorMsgInvalidTaskDescription);
-                    }
-                    _description = value;
-                }
-            }
-        
-    } 
-}       
-                        </code>
-                    </pre>
-
-                    <p>From there, I temporarily removed my TaskService and TaskServiceTest classes, basically copied them elsewhere. I was able to test that when I ran my unit tests, it would work. This worked and I was able to say that I had done this correctly. It also removed the redundancies I had before and looked a lot cleaner.</p>
-
-                    <p>This led me to bringing my removed classes back and starting the process of turning TaskService into a more efficient format as well. This was the original code I had from the direct conversion I did:</p>
-
-                    <pre>
-                        <code class="language-C# line-numbers" data-prismjs-copy="Copy the C# snippet!">
-namespace TaskSchedule
-{
-    public class TaskService
-    {
-        private readonly Dictionary<string, Task> _tasks;
-                                        
-        public TaskService()
-        {
-            _tasks = new Dictionary<string, Task>();
-        }
-                                    
-        public bool AddTask(Task task)
-        {
-            if(_tasks.ContainsKey(task.GetTaskId()))
-            {
-                throw new ArgumentException("This task ID already exists, please enter a different ID.");
-            }
-                                        
-            _tasks[task.GetTaskId()] = task;
-                                        
-            return true;
-        }
-                                    
-        public bool DeleteTask(string taskId)
-        {
-            if(_tasks.ContainsKey(taskId))
-            {
-                _tasks.Remove(taskId);
-                                            
-                return true;
-            }
-                                        
-            return false;
-        }
-                                    
-        public void UpdateTaskName(string taskId, string newName)
-        {
-            Task task = _tasks.GetValueOrDefault(taskId);
-                                        
-            if(task == null)
-            {
-                throw new ArgumentException("The Task ID does not exist, please enter a valid task ID.");
-            }
-                                        
-            task.SetTaskName(newName);
-        }
-                                    
-        public void UpdateTaskDesc(string taskId, string newDesc)
-        {
-            Task task = _tasks.GetValueOrDefault(taskId);
-                                        
-            if (task == null)
-            {
-                throw new ArgumentException("The Task ID does not exist, please enter a valid task ID.");
-            }
-
-            task.SetTaskDesc(newDesc);
-        }
-
-        public Task GetTask(string taskId)
-        {
-            return _tasks.GetValueOrDefault(taskId);
-        }
-    }
-}
-                        </code>
-                    </pre>
-
-                    <p>Now, I knew this code worked, but it wasn’t the most efficient. I repeated the same process of research, asking questions when I needed to, and as minimal lines of code as possible. A big component was that I was retyping the argument exceptions again. I didn’t need to do that because I had already done that in the Task class. That meant I had no reason to retype this information. Since I was using the Task class to declare values in my methods, I was able to take that out of there. I could then use the access to the dictionary I created to access everything. This led to my final code:</p>
-
-
-                    <pre>
-                        <code class="language-C# line-numbers" data-prismjs-copy="Copy the C# snippet!">
-namespace TaskScheduler
-{
-    public class TaskService
-    {
-        private readonly Dictionary<string, Task> _tasks = new();
-
-            public bool AddTask(Task task)
-            {
-                return _tasks.TryAdd(task.Id, task);
-            }
-
-        public bool DeleteTask(Task task)
-        {
-            if (!_tasks.ContainsKey(task.Id))
-            {
-                return false;
-            }
-            _tasks.Remove(task.Id);
-
-            return true;
-
-        }
-
-        public static void UpdateTaskName(Task task, string newName)
-        {
-            task.Name = newName;
-        }
-
-        public static void UpdateTaskDesc(Task task, string newDesc)
-        {
-            task.Description = newDesc;
-        }
-
-        public Task? GetTask(string taskId)
-        {
-            _tasks.TryGetValue(taskId, out Task? task);
-            return task;
-        }
-    }
-}
-                        </code>
-                    </pre>
-
-                    <p>After I did that, and was certain that it wouldn’t throw errors, I ran my unit tests again. As you saw, it worked. I also realized that I wasn’t being the most efficient in my setup of the tests. Starting with the TaskServiceTest class, I went and looked at how I could not only cover the tests I already had, but make them run better. For one thing, I had originally done a setup method that was meant for starting a new task service. I didn’t need to do this. This allowed me to remove that and the constructor because I didn’t need them anymore. I then went around looking at how to lower the amount of code in my tests. The only one that I really made changes to was the GetTaskTest. The original code looked like this:</p>
-
-                    <pre>
-                        <code class="language-C# line-numbers" data-prismjs-copy="Copy the C# snippet!">
-[Fact]
-public void GetTaskTest()
-{
-    Task task = new Task("05", "Task 5", "Task Description.");
-                                
-    _taskService.AddTask(task);
-
-    Task retrievedTask = _taskService.GetTask("05");
-
-    Assert.Equal(task, retrievedTask);
-}
-                        </code>
-                    </pre>
-
-                    <p>In making my changes, I noticed that I didn’t need the retrievedTask variable and only needed to use the Assert.Equal. That led my final version:</p>
-
-                    <pre>
-                        <code class="language-C# line-numbers" data-prismjs-copy="Copy the C# snippet!">
-[Fact]
-public void GetTaskTest()
-{
-    Task task = new Task("05", "Task 5", "Task Description.");
-                            
-    _taskService.AddTask(task);
-                            
-    Assert.Equal(task, _taskService.GetTask("05"));
-}
-                        </code>
-                    </pre>
-
-                    <p>For the most part, minus those couple of changes, I didn’t have to do anything different. It was in the TaskTest class that I made more changes. Here is the original code:</p>
-
-                    <pre>
-                        <code class="language-C# line-numbers" data-prismjs-copy="Copy the C# snippet!">
-using Xunit;
-
-namespace TaskSchedule
-{
-    public class TaskTest
-    {
-        [Fact]
-        public void TaskCreationTest()
-        {
-            Task task = new Task("Task1", "New Task", "Task Description");
-                        
-            Assert.Equal("Task1", task.GetTaskId());
-            Assert.Equal("New Task", task.GetTaskName());
-            Assert.Equal("Task Description", task.GetTaskDesc());
-                        
-        }
-                        
-        [Fact]
-        public void TaskIdLengthIsLessThanOrEqual()
-        {
-            Task task = new Task("1", "Task Name", "Description of Task");
-                        
-            Assert.True(task.GetTaskId().Length <= 10);
-        }
-                        
-        [Fact]
-        public void TaskIdIsNotNull()
-        {
-            Task task = new Task("2", "Task", "Task");
-                        
-            Assert.NotNull(task.GetTaskId());
-        }
-                        
-        [Fact]
-        public void InvalidName()
-        {
-            Assert.Throws<ArgumentException>(() => { new Task("3", "This is way too long and makes sure " +
-                "it's valid.", "Task Description");
-            });
-        }
-                        
-        [Fact]
-        public void InvalidDescription()
-        {
-            Assert.Throws<ArgumentException>(() => { new Task("4", "Task Name", "This description is " +
-                "definitely too long for this area and should only be 50 characters.");
-            });
-        }
-    }
-}                        
-                        </code>
-                    </pre>
-
-                    <p>I feel that in terms of the outcomes, I did better in the communication outcome because I did speak with those that were more in the know than I am. They were able to help me clear up areas I had never thought about and learning a few more things in regards to industry standards. I was also very aware of using a language that was more secure than an older version of Java. In the end, this one felt worked better across multiple areas.</p>
+                    <p>In the end, what I learned was that sometimes the most obvious answer isn’t the answer. In this case, it was learning that a small database, like what was being done here, doesn’t necessarily need a focus on making querying faster. Yes, that can seem important, but what is more important was what I noticed during my code review. It was the security. The other thing I noticed was that I likely didn’t need to spend a week working on trying to get the system to display information like it did when I was in my class. Since I had moved to a security route, it wasn’t necessarily important that it display the information. It was more important that I could get a login feature working that would authenticate a user. It came down to me looking more in depth at what was there and I learned how to do that and set it up along the way.</p>
                 </article>
             </section>
             <aside id="mainAside">
