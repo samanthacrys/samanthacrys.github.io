@@ -34,10 +34,11 @@ header img {
 	
 h1 {
 	margin: 0 0 0 100px; 
-	padding-top: 60px;
-	color: #33f7ec; 
+	padding-top: 70px;
+	padding-left: 20px;
+	color: #ffffff; 
 	Font-Family: "Monotype Corsiva";
-	font-size: 45px;
+	font-size: 40px;
 	text-shadow: 5px 4px 0px #000000;
 	text-transform: uppercase;
 	-ms-transform: rotate(6deg) scale(1.2,1);
@@ -49,7 +50,7 @@ h1 {
 
 h2 {
 	color: #FFFFFF; 
-	padding-top: 40px; 
+	padding-top: 25px; 
 	margin: 25px 0 0 150px;
 	font-size: 30px;
 	text-shadow: 15px 3px 0px #000000;
