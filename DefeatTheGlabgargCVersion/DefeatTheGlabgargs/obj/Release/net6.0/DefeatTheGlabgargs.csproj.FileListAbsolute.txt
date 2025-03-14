@@ -1,0 +1,15 @@
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/bin/Release/net6.0/DefeatTheGlabgargs
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/bin/Release/net6.0/DefeatTheGlabgargs.deps.json
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/bin/Release/net6.0/DefeatTheGlabgargs.runtimeconfig.json
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/bin/Release/net6.0/DefeatTheGlabgargs.dll
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/bin/Release/net6.0/DefeatTheGlabgargs.pdb
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.csproj.AssemblyReference.cache
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.AssemblyInfoInputs.cache
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.AssemblyInfo.cs
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.csproj.CoreCompileInputs.cache
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.dll
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/refint/DefeatTheGlabgargs.dll
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.pdb
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/DefeatTheGlabgargs.genruntimeconfig.cache
+/Users/samantha/Documents/GitHub/samanthacrysdurr.github.io/DefeatTheGlabgargCVersion/DefeatTheGlabgargs/obj/Release/net6.0/ref/DefeatTheGlabgargs.dll

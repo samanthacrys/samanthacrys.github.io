@@ -1,0 +1,12 @@
+@{
+	var customerEmail = Request[“email”];
+	var customerRequest = Request[“message”];
+	try
+	{
+	WebMail.Send(to:”sam@stillman.com”, subject: “Your Form” + customerEmail, body: customerRequest );
+	}
+	cast (Exception ex )
+	{
+	<text>@ex</text>
+	}
+}

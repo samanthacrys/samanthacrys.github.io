@@ -1,0 +1,64 @@
+/* Contact Form CSS Begins */
+
+#contact_formwrap {
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 10px;
+	width: 350px;
+}
+
+section form fieldset label {
+	margin-left: 10px;
+	font-style: italic;
+}
+
+.message {
+	font-weight: bold;
+}
+
+.errors {
+	color: #af1010;
+}
+
+label {
+	font-weight: bold;
+}
+
+.textfield {
+	padding: 5px 0 0 3px;
+	width: 297px;
+	height: 20px;
+	border: 1px groove #000000;
+	color: #FFF;
+}
+
+.textarea {
+	padding: 3px;
+	width: 550px;
+	height: 144px;
+	border: 1px groove #000000;
+	background-color: #FFFFFF;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #000000;
+	margin-left: 30px;
+}
+
+.button {
+	padding: 3px 0 5px 0;
+	margin-bottom: 10px;
+	width: 75px;
+	height: 25px;
+	border: none;
+	background-color: #303942;
+	font-weight: bold;
+	cursor: pointer;
+	color: #FFF;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+.button:hover {
+	background-color: #f1f1f1;
+	color: #333;
+}
+/* Contact Form CSS Ends */
